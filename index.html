@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>您即将前往........</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function getQueryString(name) {
+			let reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+			let r = window.location.search.substr(1).match(reg);
+			if (r != null) {
+				return decodeURIComponent(r[2]);
+			}
+			;
+			return null;
+		}
+		k = getQueryString("k");
+		
+		
+		window.location.href = "https://5w.fit/" + k
+	</script>
+
+</body>
+</html>
